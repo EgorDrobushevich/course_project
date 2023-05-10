@@ -1,0 +1,46 @@
+main{
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 2vw;
+    margin: 1vh auto;
+    width: 70vw;
+}
+form h2{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+form hr {
+    width: 60%;
+    margin: 1% auto;
+    border-color: black;
+    border-radius: 1px;
+}
+form p input{
+    padding: 1vh 2vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    width: 30%;
+}
+form p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1vh 0;
+} 
+form button{
+    padding: 1%;
+    border: 1px solid black;
+    background-color: #f0f0f0c5;
+    border-radius: 5vh;
+}
+form button:hover{
+    background-color: rgb(216, 206, 190);
+    cursor:pointer;
+}

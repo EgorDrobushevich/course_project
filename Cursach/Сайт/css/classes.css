@@ -1,0 +1,29 @@
+.classes{
+    width: 70vw;
+    margin: 2vw auto 0vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid black;
+    border-radius: 2vw;
+    padding: 2%;
+    padding-bottom: 6vh;
+}
+hr{
+
+    border-color: black;
+    border-radius: 1px;
+    margin: 5% auto;
+    width: 70%;
+}
+.class h3{
+    text-align: center;
+}
+.class p{
+    padding: 2% 2% 0%;
+    text-indent: 4%;
+}
+.class ul{
+    padding-left: 6%;
+}
+.class li{
+    list-style: circle;
+}

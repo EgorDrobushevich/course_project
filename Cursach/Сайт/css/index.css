@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-position: center;
+
+}
+.flex{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+header{
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    height: 8vw;
+    width: 100vw;
+    font-size: 2.5vw;
+    background-color:rgb(237, 237, 237);
+    flex-direction: row;
+    flex: 0;
+    justify-content:space-between;
+}
+
+.logo{
+    display: flex;
+    flex: 4; 
+    flex-direction: row;
+}
+.logo p{
+    font-size: 2.5vw;
+    width: max-content;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    display: flex;
+    max-width: 100px;
+}
+nav{ 
+    display: flex;
+    flex: 5;
+    position: flex-end;
+    padding-right:5%;
+    align-items: center;
+}
+nav button{
+    display: flex;
+    height: 100%;
+    flex:1;
+    min-width: max-content;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: rgb(237, 237, 237);
+}
+nav a{
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(1.5vh,1.5vw);
+    height: 100%;
+    width: 100%;
+    padding: 0% 5%;
+}
+nav a:hover{
+    background-color: rgb(216, 206, 190);
+}
+
+.tel{
+    display: flex;
+    flex: 1.5;
+    padding: 1%;
+    font-size: 1.25vw;
+}
+.tel ul{
+    width: 100%;
+}
+.tel li{
+    width: 100%;
+}
+.tel .mts{
+    width: 1.25vw;
+    height: 1.25vw;
+    float: left;
+}
+
+
+.wi{
+    height:6vw;
+}
+
+*[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -10vw;
+    height: 10vw;
+    visibility: hidden;
+    position: relative;
+    z-index: -1;
+  }
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: max-content;
+    padding: 8vw 0 2vh;
+}
+main .post1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+main .post1 img{
+width: 80%;
+}
+main .post1 .buttons{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: aqua;
+}
+main .post1 .buttons button{
+    display: flex;
+    flex: 1;
+    margin-top: -5vw;
+    z-index: 1;
+    height: 5vw;
+    font-size: 2vw;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #a4a4a4; ;
+}
+main .post1 p{
+    z-index: 2;
+    top:15vh;
+    position: absolute;
+    font-size: 400%;
+    width: 70%;
+    color: rgb(255, 230, 0);
+    background-color: #0000006e;
+}
+
+
+
+
+main .grid{
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    height: 40vw;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50% ;
+}
+main .grid div{
+    padding: 10%;
+}
+main .grid button{
+    width: 100%;
+    height: 100%;
+    border: 1vw solid orange ;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+main .grid button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2vw;
+}
+
+main .grid button:hover{
+    background-color: #ffffffe7;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(14, 0, 64);
+    flex: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0px 10px;
+}
+ footer a{
+    color: #ffffff;
+ }
+footer a:hover{
+    color: #5453a4;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+@media(max-width:600px){
+    header{
+        display: flex;
+        height: max-content;
+        width: 100vw;
+        font-size: 2.5vw;
+        background-color:rgb(237, 237, 237);
+        flex: 0;
+        position: static;
+        z-index: 0;
+    }
+    
+    .logo, .tel{
+        display: none;
+    }
+ 
+    nav{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+        z-index: 0;
+        height: 100vh;
+
+    }
+    nav button{
+        display: flex;
+        height: 100%;
+        flex:1;
+        min-width: max-content;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: rgb(237, 237, 237);
+    }
+    nav a{
+        min-width: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 0% 5%;
+        font-size: 3vh;
+    }
+    nav a:hover{
+        background-color: rgb(216, 206, 190);
+    }
+    .wi{
+        display: none;
+    }
+    .autor img{
+        max-width:90% ;
+    }     
+}
